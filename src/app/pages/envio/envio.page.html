@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-toolbar>
+      <ion-title class="ion-text-center" size="medium">Envios Express</ion-title>
+      <ion-title class="ion-text-center" size="small">Envios a todo el pais</ion-title>
+    </ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Encargado: </ion-label>
+    <ion-input aria-label = "Email" [(ngModel)]="articulo_seleccionado.articulo_seleccionado[2].nombre"></ion-input>
+    <ion-label position="floating">Fecha Envio: </ion-label>
+    <ion-input aria-label = "Email" [(ngModel)]="fecha_envio"></ion-input>
+    <ion-label position="floating">Nombre Remitente: </ion-label>
+    <ion-input aria-label = "Email" [(ngModel)]="nombre_remitente"></ion-input>
+    <ion-label position="floating">Direccion Remitente: </ion-label>
+    <ion-input aria-label = "Email" [(ngModel)]="direccion_remitente"></ion-input>
+    <ion-label position="floating">Telefono Remitente: </ion-label>
+    <ion-input aria-label = "Email" [(ngModel)]="telefono_remitente"></ion-input>
+    <ion-label position="floating">Nombre Destinatario: </ion-label>
+    <ion-input aria-label = "Email" [(ngModel)]="nombre_destinatario"></ion-input>
+    <ion-label position="floating">Direccion Destinatario: </ion-label>
+    <ion-input aria-label = "Email" [(ngModel)]="direccion_destinatario"></ion-input>
+    <ion-label position="floating">Descripcion Articulo: </ion-label>
+    <ion-input aria-label = "Email" [(ngModel)]="descripcion_articulo"></ion-input>
+
+  </ion-item>
+  <ion-button color="primary" (click)="enviar()" expand="block" shape="round">Guardar Envio</ion-button>
+
+</ion-content>
